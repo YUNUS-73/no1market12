@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bize Sat - NO1-Market</title>
     <!-- Favicon eklendi -->
     <link rel="icon" href="logo.png" type="image/png">
@@ -54,7 +55,7 @@
     <!-- Üst kısım: NO1-Market başlığı, logo ve Ana Sayfa linki -->
     <header class="container flex justify-between items-center p-2 px-4">
         <div class="flex items-center">
-            <img src="logo.png" alt="NO1-Market Logo" class="h-12 w-12 rounded-full mr-2">
+            <img src="logo.png" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=NO1';" alt="NO1-Market Logo" class="h-12 w-12 rounded-full mr-2">
             <div class="text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
         </div>
         <a href="index.html" class="link-hover-effect text-yellow-200 hover:text-yellow-400 text-shadow text-base">Anasayfa</a>
@@ -64,11 +65,12 @@
         <h1 class="text-5xl font-extrabold text-center mb-8 text-yellow-300">Bize Sat</h1>
         
         <!-- Ürün kartlarının yer aldığı bölüm -->
-        <div class="grid grid-cols-3 gap-6">
+        <!-- NOT: Ekran boyutuna göre 1, 2 veya 3 sütunlu hale getirildi -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <!-- Migros Yemek Ürünü -->
             <a href="migros.html" class="product-card block">
-                <img src="migros.png" alt="Migros Yemek Görseli" class="product-image mb-4">
+                <img src="migros.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Migros+Yemek';" alt="Migros Yemek Görseli" class="product-image mb-4">
                 <div class="flex flex-col items-center">
                     <h2 class="text-xl font-bold mb-2 text-green-400">Migros Yemek</h2>
                     <span class="text-2xl font-extrabold text-red-500">150-300 TL</span>
@@ -77,7 +79,7 @@
             
             <!-- KazandıRio ve Daha Daha Ürünü -->
             <a href="cips-kapak.html" class="product-card block">
-                <img src="cips-kapak.png" alt="KazandıRio ve Daha Daha Görseli" class="product-image mb-4">
+                <img src="cips-kapak.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=KazandıRio+Daha+Daha';" alt="KazandıRio ve Daha Daha Görseli" class="product-image mb-4">
                 <div class="flex flex-col items-center">
                     <h2 class="text-xl font-bold mb-2 text-white">KazandıRio ve Daha Daha</h2>
                     <span class="text-2xl font-extrabold text-red-500">1,5-7 TL</span>
@@ -86,7 +88,7 @@
             
             <!-- McDonald's Bedava Menüler Ürünü -->
             <a href="bedava-menu.html" class="product-card block">
-                <img src="bedava-menu.png" alt="McDonald's Bedava Menü Görseli" class="product-image mb-4">
+                <img src="bedava-menu.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=McDonalds+Menüler';" alt="McDonald's Bedava Menü Görseli" class="product-image mb-4">
                 <div class="flex flex-col items-center">
                     <h2 class="text-xl font-bold mb-2 text-yellow-400">McDonald's Bedava Menüler</h2>
                     <span class="text-2xl font-extrabold text-red-500">-</span>
@@ -95,7 +97,7 @@
             
             <!-- Market Çekleri Ürünü -->
             <a href="market-cek.html" class="product-card block">
-                <img src="market-cek.png" alt="Market Çekleri Görseli" class="product-image mb-4">
+                <img src="market-cek.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Market+Çekleri';" alt="Market Çekleri Görseli" class="product-image mb-4">
                 <div class="flex flex-col items-center">
                     <h2 class="text-xl font-bold mb-2 text-blue-400">Market Çekleri</h2>
                     <span class="text-2xl font-extrabold text-red-500">-</span>
@@ -104,16 +106,25 @@
             
             <!-- Espressolab Market Fişi Ürünü -->
             <a href="market-fis.html" class="product-card block">
-                <img src="market-fis.png" alt="Espressolab Market Fişi Görseli" class="product-image mb-4">
+                <img src="Espressolab.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Espressolab+Fişi';" alt="Espressolab Market Fişi Görseli" class="product-image mb-4">
                 <div class="flex flex-col items-center">
                     <h2 class="text-xl font-bold mb-2 text-orange-400">Espressolab Market Fişi</h2>
+                    <span class="text-2xl font-extrabold text-red-500">-</span>
+                </div>
+            </a>
+            
+            <!-- Yeni eklenen Market Fişi Ürünü -->
+            <a href="yeni-market-fis.html" class="product-card block">
+                <img src="marketfis.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Market+Fişi';" alt="Market Fişi Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-orange-400">Market Fişi</h2>
                     <span class="text-2xl font-extrabold text-red-500">-</span>
                 </div>
             </a>
 
             <!-- Play Store Hediye Kodu Ürünü -->
             <a href="googleplay.html" class="product-card block">
-                <img src="googleplay.png" alt="Play Store Hediye Kodu Görseli" class="product-image mb-4">
+                <img src="googleplay.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Play+Store+Hediye';" alt="Play Store Hediye Kodu Görseli" class="product-image mb-4">
                 <div class="flex flex-col items-center">
                     <h2 class="text-xl font-bold mb-2 text-indigo-400">Play Store Hediye Kodu</h2>
                     <span class="text-2xl font-extrabold text-red-500">%55 - Toplu %65 oranla</span>
@@ -122,10 +133,19 @@
             
             <!-- S Sport Plus Ürünü -->
             <a href="ssport.html" class="product-card block">
-                <img src="ssport.png" alt="S Sport Plus Görseli" class="product-image mb-4">
+                <img src="ssport.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=S+Sport+Plus';" alt="S Sport Plus Görseli" class="product-image mb-4">
                 <div class="flex flex-col items-center">
                     <h2 class="text-xl font-bold mb-2 text-red-500">S Sport Plus</h2>
                     <span class="text-2xl font-extrabold text-red-500">35 TL</span>
+                </div>
+            </a>
+            
+            <!-- YENİ EKLENEN: Hopi Paracık Ürünü -->
+            <a href="hopi.html" class="product-card block">
+                <img src="Hobi.png" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2d3748/ffffff?text=Hopi+Paracık';" alt="Hopi Paracık Görseli" class="product-image mb-4">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-xl font-bold mb-2 text-pink-400">Hopi Paracık</h2>
+                    <span class="text-2xl font-extrabold text-red-500">-</span>
                 </div>
             </a>
         </div>
@@ -134,10 +154,10 @@
     <!-- Alt kısım: Telegram ve WhatsApp logoları -->
     <footer class="container flex justify-center space-x-6 p-4 mt-8">
         <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
-            <img src="2.jpg" alt="Telegram Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+            <img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
         </a>
         <a href="https://wa.me/5397248410" target="_blank" class="link-hover-effect">
-            <img src="3.jpg" alt="WhatsApp Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
+            <img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-12 w-12 rounded-full shadow-lg border-2 border-white">
         </a>
     </footer>
 

@@ -28,6 +28,9 @@
         .button-hover-effect:hover {
             transform: scale(1.05);
         }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
     </style>
 </head>
 <body class="flex flex-col items-center min-h-screen p-4">
@@ -36,7 +39,7 @@
     <header class="w-full flex justify-between items-center p-2 px-4">
         <!-- Başlık için responsive boyutlandırma eklendi -->
         <div class="flex items-center">
-            <img src="logo.png" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
+            <img src="logo.png" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=LOGO';" alt="NO1-Market Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full mr-2">
             <div class="text-xl sm:text-3xl font-bold text-yellow-400 text-shadow">NO1-Market</div>
         </div>
         <!-- Ana sayfaya geri dönmek için link -->
@@ -46,7 +49,7 @@
     <main class="w-full container bg-gray-800 p-8 rounded-lg shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <!-- Ürün görseli -->
         <div class="product-image-container">
-            <img src="whatsapp+90.png" alt="WhatsApp +90 Görseli" class="rounded-lg shadow-lg">
+            <img src="whatsapp+90.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/2d3748/ffffff?text=WhatsApp+%2B90';" alt="WhatsApp +90 Görseli" class="rounded-lg shadow-lg">
         </div>
 
         <!-- Ürün bilgileri ve butonlar -->
@@ -61,14 +64,19 @@
             </div>
 
             <!-- Satın alma butonları -->
+            <!-- Ekran boyutuna göre 1 veya 3 sütunlu hale getirildi -->
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <!-- WhatsApp Butonu -->
-                <a href="https://wa.me/5397248410" target="_blank" class="w-full sm:w-1/2 bg-green-500 text-white font-bold py-3 px-6 rounded-full text-center button-hover-effect hover:bg-green-600">
+                <a href="https://wa.me/5397248410" target="_blank" class="w-full sm:w-1/3 bg-green-500 text-white font-bold py-3 px-6 rounded-full text-center button-hover-effect hover:bg-green-600">
                     WhatsApp ile satın al
                 </a>
                 <!-- Telegram Butonu -->
-                <a href="https://t.me/mehmetkahraman019" target="_blank" class="w-full sm:w-1/2 bg-blue-500 text-white font-bold py-3 px-6 rounded-full text-center button-hover-effect hover:bg-blue-600">
+                <a href="https://t.me/mehmetkahraman019" target="_blank" class="w-full sm:w-1/3 bg-blue-500 text-white font-bold py-3 px-6 rounded-full text-center button-hover-effect hover:bg-blue-600">
                     Telegram ile satın al
+                </a>
+                <!-- Kripto ile Öde Butonu -->
+                <a href="trc20.html" class="w-full sm:w-1/3 bg-gray-500 text-white font-bold py-3 px-6 rounded-full text-center button-hover-effect hover:bg-gray-600">
+                    Kripto ile Öde TRC20
                 </a>
             </div>
         </div>
@@ -77,10 +85,10 @@
     <!-- Alt kısım: Telegram ve WhatsApp logoları -->
     <footer class="flex justify-center space-x-6 p-4 mt-8 w-full">
         <a href="https://t.me/mehmetkahraman019" target="_blank" class="link-hover-effect">
-            <img src="2.jpg" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            <img src="2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=TG';" alt="Telegram Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
         </a>
         <a href="https://wa.me/5397248410" target="_blank" class="link-hover-effect">
-            <img src="3.jpg" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
+            <img src="3.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/2d3748/ffffff?text=WA';" alt="WhatsApp Logosu" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-lg border-2 border-white">
         </a>
     </footer>
 
